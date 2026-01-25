@@ -11,10 +11,9 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=/usr/share/pixmaps/soh.png
 export DESKTOP=/usr/share/applications/soh.desktop
 export DEPLOY_OPENGL=1
-export DEPLOY_PIPEWIRE=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/soh /usr/bin/soh-otr-exporter /usr/lib/libdecor/*/libdecor-cairo.so
+quick-sharun /usr/bin/soh /usr/bin/soh-otr-exporter
 
 # Additional changes can be done in between here
 

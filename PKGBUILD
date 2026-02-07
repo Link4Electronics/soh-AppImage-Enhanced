@@ -72,11 +72,6 @@ package_soh() {
   install -Dm644 "${srcdir}/${_reponame}-${pkgver}/build/soh/soh.o2r" "${pkgdir}/usr/bin/soh.o2r"
   install -Dm644 "${srcdir}/soh.desktop" -t "${pkgdir}/usr/share/applications"
   install -Dm644 soh/macosx/sohIcon.png "${pkgdir}/usr/share/pixmaps/soh.png"
-
-  # Copy game documentation
-  install -dm755 "${pkgdir}/usr/share/doc/soh"
-  install -Dm644 "README.md" "${pkgdir}/usr/share/doc/soh"
-  cp -r docs "${pkgdir}/usr/share/doc/soh/docs"
 }
 
 package_soh-otr-exporter() {
@@ -90,5 +85,4 @@ package_soh-otr-exporter() {
 
   install -dm755 "${pkgdir}/usr/bin"
   install -dm755 "${pkgdir}/usr/share/licenses/soh-otr-exporter"
-  install -Dm644 "OTRExporter/LICENSE" "${pkgdir}/usr/share/licenses/soh-otr-exporter/LICENSE"
 }
